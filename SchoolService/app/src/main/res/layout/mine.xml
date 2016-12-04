@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/mine_photo" />
+
+    <com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <com.whu.Gongyinchao.schoolservice.common.uikit.SSRelativeLayout
+            android:id="@+id/mine_offline"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/mine_offline_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mine_offline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/mine_offline_photo"
+                android:text="离线包下载"
+                android:textSize="16sp" />
+
+        </com.whu.Gongyinchao.schoolservice.common.uikit.SSRelativeLayout>
+
+        <com.whu.Gongyinchao.schoolservice.common.uikit.SSRelativeLayout
+            android:id="@+id/mine_about"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/mine_about_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mine_about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/mine_about_photo"
+                android:text="关于我们"
+                android:textSize="16sp" />
+        </com.whu.Gongyinchao.schoolservice.common.uikit.SSRelativeLayout>
+    </com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout>
+</com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout>

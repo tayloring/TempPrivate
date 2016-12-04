@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffefebe7">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mtitle">
+
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="85dip"
+        android:layout_height="60.0dip" >
+
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#198648" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="10.0dip"
+            android:text="校园"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dip"
+        android:gravity="right"
+        android:id="@+id/serachre"
+        android:layout_toRightOf="@+id/top_relative">
+        <include layout="@layout/search_box" />
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/weatherpt"
+        android:layout_height="200dip">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/wea">
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/weatherpt">
+
+
+
+
+
+
+</ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/weatherpt">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/findgeo">
+
+                            <com.whu.Gongyinchao.schoolservice.findmodule.ui.FindGeoView
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:id="@+id/find1">
+
+
+
+                            </com.whu.Gongyinchao.schoolservice.findmodule.ui.FindGeoView>
+                        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/findgeo"
+            android:id="@+id/main">
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_button1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/ll_button2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/ll_button1"
+                                android:layout_marginTop="0dp"
+                                android:orientation="horizontal">
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+
+
+
+
+                    </RelativeLayout>
+
+</RelativeLayout>
+
+

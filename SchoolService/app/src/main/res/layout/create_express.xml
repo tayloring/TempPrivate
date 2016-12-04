@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<RelativeLayout
+    android:id="@+id/top_relative"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip" >
+
+    <ImageView
+        android:id="@+id/titleBg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#198648" />
+
+
+
+
+    <ImageView
+        android:id="@+id/progressImage"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/android_title_bg_progress"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"
+        android:padding="10.0dip"
+        android:text="发布快递"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:singleLine="true" />
+
+</RelativeLayout>
+
+<com.whu.Gongyinchao.schoolservice.common.uikit.SSRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="300dip"
+    android:id="@+id/map">
+
+    <Button
+        android:id="@+id/location_requst"
+        android:background="@drawable/outdoor_request"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/publish_mapView"
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:clickable="true"
+        />
+</com.whu.Gongyinchao.schoolservice.common.uikit.SSRelativeLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="109dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/location"
+        android:layout_height="109dp" />
+
+
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0eb62a"
+        android:id="@+id/sure"
+        android:textSize="20dp"
+        android:text="发送"/>
+
+
+</LinearLayout>
+
+
+
+</com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout>

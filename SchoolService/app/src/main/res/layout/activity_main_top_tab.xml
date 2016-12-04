@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
+    android:baselineAligned="false"
+    android:id="@+id/id_switch_tab_ll"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:id="@+id/id_tab_chat_ll"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dip">
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/id_chat_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="聊天"
+            android:textColor="#0000FF"
+            android:textSize="15dip">
+        </TextView></LinearLayout>
+
+    <LinearLayout
+
+        android:clickable="true"
+        android:gravity="center"
+        android:id="@+id/id_tab_friend_ll"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dip"
+        android:saveEnabled="false">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/id_friend_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="好友"
+            android:textColor="#000000"
+            android:textSize="15dip">
+        </TextView></LinearLayout>
+
+    <LinearLayout
+
+        android:focusable="false"
+        android:gravity="center"
+        android:id="@+id/id_tab_contacts_ll"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dip">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/id_contacts_tv"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="通讯录"
+            android:textColor="#000000"
+            android:textSize="15dip">
+        </TextView></LinearLayout>
+</LinearLayout>
+
+<ImageView
+
+    android:contentDescription="tab"
+    android:id="@+id/id_tab_line_iv"
+    android:layout_height="wrap_content"
+    android:layout_width="200dp">
+</ImageView>
+
+<View
+    android:background="#000000"
+    android:layout_height="1dp"
+    android:layout_width="match_parent">
+
+</View></LinearLayout>
+
+
+

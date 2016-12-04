@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.whu.Gongyinchao.schoolservice.common.uikit.SSViewPager
+        android:id="@+id/main_vierpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <krelve.view.Kanner
+            android:id="@+id/kanner"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+    </com.whu.Gongyinchao.schoolservice.common.uikit.SSViewPager>
+    <com.whu.Gongyinchao.schoolservice.common.uikit.SSPagerSlidingTabStrip
+        android:id="@+id/main_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        app:pstsUnderlineColor="@android:color/transparent"
+        app:pstsShouldExpand="true">
+    </com.whu.Gongyinchao.schoolservice.common.uikit.SSPagerSlidingTabStrip>
+
+</com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout>

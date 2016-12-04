@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whu.Gongyinchao.schoolservice.common.uikit.SSRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="税务会计" />
+
+        <com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/course_item_teacher" />
+
+            <TextView
+                android:id="@+id/course_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/course_item_members" />
+
+            <TextView
+                android:id="@+id/course_members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout>
+
+        <com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/course_item_time" />
+
+            <TextView
+                android:id="@+id/course_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout>
+    </com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout>
+
+    <Button
+        android:id="@+id/course_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="最快路线"
+        android:textSize="12sp" />
+</com.whu.Gongyinchao.schoolservice.common.uikit.SSRelativeLayout>

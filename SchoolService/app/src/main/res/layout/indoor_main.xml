@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#106184" />
+
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:padding="10.0dip"
+            android:text="室内"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+    <com.whu.Gongyinchao.schoolservice.common.uikit.SSPickerView
+        android:id="@+id/indoor_picker"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.whu.Gongyinchao.schoolservice.common.uikit.SSPickerView>
+
+    <com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.whu.Gongyinchao.schoolservice.indoormodule.ui.IndoorBanner
+            android:id="@+id/banner_class"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.whu.Gongyinchao.schoolservice.indoormodule.ui.IndoorBanner>
+
+        <com.whu.Gongyinchao.schoolservice.indoormodule.ui.IndoorBanner
+            android:id="@+id/banner_study"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.whu.Gongyinchao.schoolservice.indoormodule.ui.IndoorBanner>
+
+        <com.whu.Gongyinchao.schoolservice.indoormodule.ui.IndoorBanner
+            android:id="@+id/banner_course"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.whu.Gongyinchao.schoolservice.indoormodule.ui.IndoorBanner>
+
+
+    </com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout>
+
+    <com.whu.Gongyinchao.schoolservice.indoormodule.ui.WeatherView
+        android:id="@+id/indoor_weather"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.whu.Gongyinchao.schoolservice.indoormodule.ui.WeatherView>
+</com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout>

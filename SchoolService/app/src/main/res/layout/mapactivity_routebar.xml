@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whu.Gongyinchao.schoolservice.common.uikit.SSRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/routebar_exchange"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/routebar_exchange"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+    <com.whu.Gongyinchao.schoolservice.common.uikit.SSRelativeLayout
+        android:id="@+id/route_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/route_guide"
+            android:layout_centerVertical="true"
+            android:text="导航"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout
+            android:id="@+id/route_search"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/route_walk"
+                android:text="步行"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp" />
+
+            <Button
+                android:id="@+id/route_bike"
+                android:text="骑行"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp" />
+
+            <Button
+                android:id="@+id/route_bus"
+                android:text="公交"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp" />
+        </com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout>
+
+    </com.whu.Gongyinchao.schoolservice.common.uikit.SSRelativeLayout>
+
+    <com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout
+        android:id="@+id/routebar_edit"
+        android:layout_toRightOf="@id/routebar_exchange"
+        android:layout_toLeftOf="@+id/route_right"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/routebar_start"
+            android:layout_weight="1"
+            android:background="@drawable/indoor_banner_each_background"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/routebar_end"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:background="@drawable/indoor_banner_each_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout>
+
+</com.whu.Gongyinchao.schoolservice.common.uikit.SSRelativeLayout>

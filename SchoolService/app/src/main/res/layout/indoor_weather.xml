@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.whu.Gongyinchao.schoolservice.indoormodule.ui.DetailWeather
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/indoor_weather_background"
+        android:id="@+id/detail_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.whu.Gongyinchao.schoolservice.indoormodule.ui.DetailWeather>
+
+    <com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@drawable/indoor_weather_background"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+
+        <com.whu.Gongyinchao.schoolservice.indoormodule.ui.SimpleWeather
+            android:id="@+id/torrow_simple"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.whu.Gongyinchao.schoolservice.indoormodule.ui.SimpleWeather>
+    </com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout>
+</com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout>

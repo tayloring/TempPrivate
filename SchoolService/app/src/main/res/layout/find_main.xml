@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+
+
+
+
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:id="@+id/top_find">
+
+      <ImageView
+          android:id="@+id/titleBg"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:background="#106184" />
+
+      <ImageView
+          android:id="@+id/progressImage"
+          android:layout_width="0.0dip"
+          android:layout_height="fill_parent"
+          android:background="@drawable/android_title_bg_progress"
+          android:visibility="gone" />
+
+      <Button
+          android:id="@+id/titleRightButton"
+          style="\@style/title_right_button"
+          android:layout_width="100.0dip"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_gravity="center_vertical"
+          android:layout_marginRight="5.0dip"
+          android:layout_marginTop="2.0dip"
+          android:visibility="gone" />
+
+      <TextView
+          android:id="@+id/titleText"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:textSize="20dp"
+          android:padding="10.0dip"
+          android:text="室内"
+          android:textColor="@color/white"
+          android:singleLine="true"
+          android:gravity="center"/>
+
+
+
+
+
+
+   </RelativeLayout>
+
+
+
+
+
+
+   <LinearLayout
+
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/top_find">
+
+
+
+      <Button
+          android:layout_width="150dp"
+          android:layout_height="159dp"
+          android:id="@+id/messge"
+          android:text="消息"/>
+      <Button
+          android:layout_width="150dp"
+          android:layout_height="167dp"
+          android:text="好友"
+          android:id="@+id/frieds"/>
+
+
+
+
+
+
+   </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</com.whu.Gongyinchao.schoolservice.common.uikit.SSLinearLayout>

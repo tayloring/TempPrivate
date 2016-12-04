@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whu.Gongyinchao.schoolservice.common.uikit.SSRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/titlebar_back"
+        android:layout_alignParentLeft="true"
+        android:layout_width="45dp"
+        android:src="@drawable/titlebar_back"
+        android:padding="10dp"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:id="@+id/titlebar_sure"
+        android:text="确定"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <EditText
+        android:id="@+id/titlebar_search"
+        android:drawableLeft="@drawable/outdoor_search"
+        android:drawablePadding="5dp"
+        android:layout_margin="4dp"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:layout_toLeftOf="@id/titlebar_sure"
+        android:layout_toRightOf="@id/titlebar_back"
+        android:background="@drawable/indoor_banner_each_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</com.whu.Gongyinchao.schoolservice.common.uikit.SSRelativeLayout>

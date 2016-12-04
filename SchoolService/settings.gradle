@@ -1,0 +1,2 @@
+include ':app', ":banner",':kanner'
+project(":banner").projectDir = new File("../Kanner/kanner")

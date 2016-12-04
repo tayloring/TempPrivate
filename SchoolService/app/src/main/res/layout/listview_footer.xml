@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    >
+	<!-- 
+		android:background="@color/iask_answer_item_color_normal"
+	 -->
+    <RelativeLayout
+        android:id="@+id/xlistview_footer_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+        
+        <LinearLayout 
+            android:id="@+id/bottom_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" 
+            android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/xlistview_footer_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+        <!--  android:src="@drawable/loading01" -->
+        <TextView 
+            android:layout_marginLeft="8dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在加载"
+            />
+        
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/xlistview_footer_hint_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="点击加载更多" />
+    </RelativeLayout>
+
+</LinearLayout>

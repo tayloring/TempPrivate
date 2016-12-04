@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bg" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/shape_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/shape_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:gravity="left|center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10.0dip"
+                android:text="请设置头像"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:id="@+id/headicon"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/login_photo"/>
+
+
+                <Button
+                     android:layout_toRightOf="@+id/headicon"
+                     android:id="@+id/ipohoto"
+                     android:layout_width="200dip"
+                     android:text="从本地选取"
+                     android:background="#6d9e99"
+                     android:layout_marginLeft="10dp"
+                     android:layout_height="49dip"
+                     />
+                 <Button
+                     android:layout_toRightOf="@+id/headicon"
+                     android:layout_width="200dip"
+                     android:id="@+id/takephoto"
+                     android:layout_marginLeft="10dp"
+                     android:text="手机拍照"
+                     android:layout_marginTop="2dp"
+                     android:background="#87a997"
+                     android:layout_height="49dip"
+                     android:layout_below="@+id/ipohoto"/>
+
+
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="昵称"
+                    android:textColor="@android:color/black"
+                    android:textSize="18.0sp"
+                    android:id="@+id/textView" />
+
+                <EditText
+                    android:id="@+id/nick_ed"
+                    android:layout_width="1dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:hint="请输入昵称"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:paddingLeft="10.0dip"
+                    android:textColor="#ff545454"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@drawable/shape_line"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:gravity="left|center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10.0dip"
+                android:text="兴趣设置"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:id="@+id/textViewtag"
+                android:layout_marginTop="5dp"/>
+
+
+            <com.whu.Gongyinchao.schoolservice.chatmodule.wheel.WheelView
+                android:id="@+id/acount_head"
+                android:layout_width="100dip"
+                android:layout_height="180dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dip"
+                android:gravity="center" />
+
+
+
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@drawable/shape_line" />
+
+
+            <com.whu.Gongyinchao.schoolservice.chatmodule.wheel.WheelView
+                android:id="@+id/acount_sex"
+                android:layout_width="150dip"
+                android:layout_height="100dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dip"
+                android:gravity="center" />
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="10.0dip"
+                    android:text="计算机类"
+                    android:textColor="#fa6e86"
+                    android:textSize="18.0sp"
+                    android:id="@+id/textView2" />
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/shape_line" />
+
+
+
+
+                <me.gujun.android.taggroup.TagGroup
+                    xmlns:tag="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tag"
+                    style="@style/TagGroup.Large"
+                    android:layout_height="200dip"
+                    android:layout_width="match_parent"
+                    tag:atg_pressedBackgroundColor="#f5c564"
+                    tag:atg_checkedBackgroundColor="#fa6e86"
+                    tag:atg_checkedMarkerColor="#fa6e86"
+                    tag:theme="@style/TagGroup"
+                    tag:atg_isAppendMode="true"
+
+
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="10.0dip"
+                    android:text="经管类"
+                    android:textColor="#fa6e86"
+                    android:textSize="18.0sp"
+                    android:id="@+id/textView3" />
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:background="@drawable/shape_line" />
+
+
+
+
+                <me.gujun.android.taggroup.TagGroup
+                    xmlns:tag="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/tag2"
+                    style="@style/TagGroup.Large"
+                    android:layout_height="200dip"
+                    android:layout_width="match_parent"
+                    tag:atg_pressedBackgroundColor="#f5c564"
+                    tag:atg_checkedBackgroundColor="#fa6e86"
+                    tag:atg_checkedMarkerColor="#fa6e86"
+                    tag:theme="@style/TagGroup"
+                    tag:atg_isAppendMode="true"
+
+
+                    />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@drawable/shape_line" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_tip"
+                android:textColor="@color/button_unselected"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="10.0dip" >
+
+            <Button
+                android:id="@+id/first_start_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/op_bg_selector"
+                android:text="进 入"
+                android:textColor="#ff000000"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/net_status_bar" />
+
+
+</LinearLayout>
